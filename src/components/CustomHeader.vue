@@ -2,7 +2,7 @@
   <header>
     <h1>{{ title }}</h1>
     <CustomButton
-      v-show="homePage()"
+      v-show="homePage"
       @btn-click="$emit('toggle-add-task')"
       :text="showAddTask ? 'Close' : 'Add Task'"
       :color="showAddTask ? 'red' : 'green'"
@@ -22,7 +22,7 @@ export default {
   components: {
     CustomButton,
   },
-  compputed: {
+  computed: {
     homePage() {
       if (this.$route.path === '/') {
         return true

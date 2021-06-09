@@ -5,7 +5,7 @@
       title="Task Tracker"
       :showAddTask="showAddTask"
     />
-    <router-view showAddTask="showAddTask"></router-view>
+    <router-view :showAddTask="showAddTask"></router-view>
     <Footer />
   </div>
 </template>
@@ -20,15 +20,15 @@ export default {
     CustomHeader,
     Footer,
   },
-  methods: {
-    toggleAddTask() {
-      this.showAddTask = !this.showAddTask
-    },
-  },
   data() {
     return {
       showAddTask: false,
     }
+  },
+  methods: {
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask
+    },
   },
 }
 </script>

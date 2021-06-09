@@ -14,7 +14,7 @@ import AddTask from '../components/AddTask'
 export default {
   name: 'Home',
   props: {
-    showAddTask: boolean,
+    showAddTask: Boolean,
   },
   components: {
     Tasks,
@@ -78,6 +78,9 @@ export default {
       const data = await res.json()
       return data
     },
+  },
+  async created() {
+    this.tasks = await this.fetchTasks()
   },
 }
 </script>

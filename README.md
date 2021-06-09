@@ -1,5 +1,6 @@
 # Repo Notes:
 > Followed from a Youtube Tutorial; https://www.youtube.com/watch?v=qZXt1Aom3Cs
+
 > Reference to the YouTube videos's repo; https://github.com/bradtraversy/vue-crash-2021
 
 # vue-crash-2021
